@@ -9,7 +9,7 @@
     "build": "payload build",
     "generate-types": "payload generate:types",
     "serve": "NODE_ENV=production node server.js",
-    "start": "payload build && cross-env NODE_ENV=production node server.js"
+    "start": "node --max_old_space_size=2560 payload build && cross-env NODE_ENV=production node server.js"
   },
   "dependencies": {
     "@payloadcms/plugin-seo": "^1.0.8",
