@@ -8,7 +8,8 @@
     "dev": "cross-env PAYLOAD_CONFIG_PATH=payload.config.ts nodemon",
     "build": "payload build",
     "generate-types": "payload generate:types",
-    "serve": "NODE_ENV=production node server.js"
+    "serve": "NODE_ENV=production node server.js",
+    "start": "payload build && cross-env NODE_ENV=production node server.js"
   },
   "dependencies": {
     "@payloadcms/plugin-seo": "^1.0.8",
