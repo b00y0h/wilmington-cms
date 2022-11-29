@@ -19,7 +19,6 @@ import Statistics from './collections/Statistic';
 import StudentOrganization from './collections/Programs/Organizations';
 import { Header } from './globals/Header';
 import Nav from './globals/Nav';
-import AfterDashboard from './components/AfterDashboard';
 import Testimonials from './collections/Testimonials';
 import Logo from './admin/components/Logo';
 import Icon from './admin/components/Icon';
@@ -29,7 +28,6 @@ export default buildConfig({
   admin: {
     user: Users.slug,
     components: {
-      afterDashboard: [AfterDashboard],
       graphics: {
         Logo: Logo,
         Icon: Icon,
