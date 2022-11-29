@@ -5,11 +5,13 @@
   "main": "server.js",
   "license": "MIT",
   "scripts": {
-    "dev": "cross-env PAYLOAD_CONFIG_PATH=payload.config.ts nodemon",
-    "build": "payload build",
-    "generate-types": "payload generate:types",
-    "serve": "NODE_ENV=production node server.js",
-    "start": "payload build && cross-env NODE_ENV=production node --optimize_for_size --max_old_space_size=2560 server.js"
+    "start": "yarn dev",
+    "dev": "cross-env PAYLOAD_CONFIG_PATH=src/payload.config.ts nodemon",
+    "build:payload": "cross-env PAYLOAD_CONFIG_PATH=src/payload.config.ts payload build",
+    "build:server": "tsc",
+    "build": "yarn build:payload && yarn build:server",
+    "serve": "cross-env PAYLOAD_CONFIG_PATH=dist/payload.config.js NODE_ENV=production node dist/server.js",
+    "generate:types": "cross-env PAYLOAD_CONFIG_PATH=src/payload.config.ts payload generate:types"
   },
   "dependencies": {
     "@payloadcms/plugin-seo": "^1.0.8",
