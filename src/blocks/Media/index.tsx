@@ -10,7 +10,7 @@ export type Type = {
 }
 
 export const Media: Block = {
-  slug: 'media',
+  slug: 'media-block',
   labels: {
     singular: 'Media Block',
     plural: 'Media Blocks',
