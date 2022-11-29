@@ -3,26 +3,26 @@ const path = require('path');
 import { buildConfig } from 'payload/config';
 import seo from '@payloadcms/plugin-seo';
 
-import Categories from './src/collections/Categories';
-import Posts from './src/collections/Posts';
-import Tags from './src/collections/Tags';
-import News from './src/collections/News/News';
-import NewsCategories from './src/collections/News/NewsCategories';
-import Events from './src/collections/Events/Events';
-import EventsCategories from './src/collections/Events/EventsCategories';
-import Users from './src/collections/Users';
-import Pages from './src/collections/Pages';
-import Faculty from './src/collections/Faculty';
-import Media from './src/collections/Media';
-import Programs from './src/collections/Programs';
-import Statistics from './src/collections/Statistic';
-import StudentOrganization from './src/collections/Programs/Organizations';
-import { Header } from './src/globals/Header';
-import Nav from './src/globals/Nav';
-import AfterDashboard from './src/components/AfterDashboard';
-import Testimonials from './src/collections/Testimonials';
-import Logo from './src/admin/components/Logo';
-import Icon from './src/admin/components/Icon';
+import Categories from './collections/Categories';
+import Posts from './collections/Posts';
+import Tags from './collections/Tags';
+import News from './collections/News/News';
+import NewsCategories from './collections/News/NewsCategories';
+import Events from './collections/Events/Events';
+import EventsCategories from './collections/Events/EventsCategories';
+import Users from './collections/Users';
+import Pages from './collections/Pages';
+import Faculty from './collections/Faculty';
+import Media from './collections/Media';
+import Programs from './collections/Programs';
+import Statistics from './collections/Statistic';
+import StudentOrganization from './collections/Programs/Organizations';
+import { Header } from './globals/Header';
+import Nav from './globals/Nav';
+import AfterDashboard from './components/AfterDashboard';
+import Testimonials from './collections/Testimonials';
+import Logo from './admin/components/Logo';
+import Icon from './admin/components/Icon';
 
 export default buildConfig({
   serverURL: 'http://localhost:3000',
