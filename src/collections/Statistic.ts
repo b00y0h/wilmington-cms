@@ -2,11 +2,6 @@ import { CollectionConfig, FieldHook } from 'payload/types';
 import link from '../fields/link';
 
 const formatFullDescription: FieldHook = async ({ data, value }) => {
-  // console.log(
-  //   '🚀 ~ file: formatFullDescription:FieldHook= ~ data, value',
-  //   data,
-  //   value
-  // );
   return data?.stat + ' ' + data?.description ?? value;
 };
 

@@ -1,6 +1,5 @@
 import react from 'react';
 import { CollectionConfig } from 'payload/types';
-import DemoUIFieldCell from '../../components/Cell';
 import { Content, Type as ContentType } from '../../blocks/Content';
 import { Media, Type as MediaBlockType } from '../../blocks/Media';
 import Statistics, {
@@ -17,7 +16,6 @@ import CTAGrid, { Type as CTAGridType } from '../../blocks/CTAGrid';
 import MediaContentBlock, {
   Type as MediaContentBlockType,
 } from '../../blocks/MediaContentBlock';
-import { FacultyBlock } from '../../blocks/FacultyBlock';
 
 export type Layout =
   | CallToActionType

@@ -1,11 +1,6 @@
 import { CollectionConfig, FieldHook } from 'payload/types';
 
 const formatFullName: FieldHook = async ({ data, value }) => {
-  // console.log(
-  //   '🚀 ~ file: Faculty.ts ~ line 4 ~ constformatFullName:FieldHook= ~ data, value',
-  //   data,
-  //   value
-  // );
   return data?.firstName + ' ' + data?.lastName ?? value;
 };
 

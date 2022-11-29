@@ -1,4 +1,4 @@
-import { CollectionConfig, FieldHook } from 'payload/types';
+import { CollectionConfig } from 'payload/types';
 import { Type as MediaType } from './Media';
 
 export type Type = {
