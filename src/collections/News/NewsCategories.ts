@@ -1,4 +1,6 @@
-const NewsCategories = {
+import { CollectionConfig } from 'payload/types';
+
+const NewsCategories: CollectionConfig = {
   slug: 'newscategories',
   labels: {
     singular: 'News Category',

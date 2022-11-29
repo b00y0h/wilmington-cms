@@ -1,4 +1,6 @@
-const Tags = {
+import { CollectionConfig } from 'payload/types';
+
+const Tags: CollectionConfig = {
   slug: 'tags',
   admin: {
     defaultColumns: ['name'],

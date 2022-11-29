@@ -1,4 +1,6 @@
-const EventsCategories = {
+import { CollectionConfig } from 'payload/types';
+
+const EventsCategories: CollectionConfig = {
   slug: 'eventscategories',
   labels: {
     singular: 'Events Category',
