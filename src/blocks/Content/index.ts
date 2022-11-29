@@ -1,8 +1,4 @@
 import { Block } from 'payload/types';
-import backgroundColor, {
-  Type as BackgroundColorType,
-} from '../../fields/backgroundColor';
-import HR from '../../components/RichText/elements/HR';
 
 export type ColumnWidth = 'oneThird' | 'half' | 'twoThirds' | 'full';
 
