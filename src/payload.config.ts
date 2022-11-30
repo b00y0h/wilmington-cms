@@ -24,7 +24,10 @@ import Logo from './admin/components/Logo';
 import Icon from './admin/components/Icon';
 
 export default buildConfig({
-  serverURL: 'http://localhost:3000',
+  serverURL: process.env.PAYLOAD_PUBLIC_CMS_URL,
+  cors: [process.env.PAYLOAD_PUBLIC_APP_URL, 'https://payloadcms.com'].filter(
+    Boolean
+  ),
   admin: {
     user: Users.slug,
     components: {

@@ -9,8 +9,6 @@ app.get('/', (_, res) => {
   res.redirect('/admin');
 });
 
-const sendGridAPIKey = process.env.SENDGRID_API_KEY;
-
 // Initialize Payload
 payload.init({
   secret: process.env.PAYLOAD_SECRET,
